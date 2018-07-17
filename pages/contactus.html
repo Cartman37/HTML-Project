@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Nintendo 64 Classics</title>
+		<link rel="icon" type="image/ico" href="../images/Nintendo_64_Logo.png">
+		<link rel="stylesheet" href="../styles/normalize.css">
+		<link rel="stylesheet" href="../styles/feedback.css">
+		<link rel="stylesheet" href="../styles/slicknav.css">
+		<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+		<script src="../js/jquery.slicknav.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+			});
+		</script>
+		<script type="text/javascript">
+			function submitEmail() {
+				alert("Email submitted.");
+			}
+		</script>
+	</head>
+	<body>
+		<header>
+			<img src="../images/Nintendo_64_Logo.png" alt="n64" height="60" />
+			<h2>NINTENDO 64 Classics</h2>
+		</header>
+		<nav id="mobile_menu"></nav>
+		<nav id="nav_menu">
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="games.html">Classic Games</a>
+					<ul>
+						<li><a href="lozoot.html">Ocarina of Time</a></li>
+						<li><a href="sm64.html">Super Mario 64</a></li>
+						<li><a href="ssb.html">Super Smash Bros</a></li>
+						<li><a href="g007.html">Goldeneye</a></li>
+					</ul>
+				</li>
+				<li><a href="images.html">Gallery</a></li>
+				<li><a href="#">Test Pages</a>
+					<ul>
+						<li><a href="#">Page 1</a></li>
+						<li><a href="#">Page 2</a></li>
+						<li><a href="#">Page 3 ></a>
+							<ul>
+								<li><a href="#">Sub-Page 1</a></li>
+								<li><a href="#">Sub-Page 2</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a href="#" class="current">Contact Us</a></li>
+			</ul>
+		</nav>
+		<main>
+			<aside id="sidebar">
+				<p>Thanks for checking out our feedback and subscription page!</p>
+				<p>How would you describe our site?</p>
+				<form name="compliments" id="compliments">
+					<input type="checkbox" name="fun" value="fun" tabindex="9">Fun!<br>
+					<input type="checkbox" name="info" value="info" tabindex="10">Informative!<br>
+					<input type="checkbox" name="design" value="design" tabindex="11">Well Designed!<br>
+					<input type="checkbox" name="pretty" value="pretty" tabindex="12">Looks Good!<br>
+					<input type="submit" name="submit" id="button" tabindex="13" value="Submit"><br>
+				</form><br><br><br>
+				<p>Will you visit again?</p>
+				<form name="return">
+					<input type="radio" name="return" value="yes" tabindex="14" checked>Sure!
+					<input type="radio" name="return" value="no" tabindex="15">No.<br>
+					<input type="submit" name="submit" id="button" tabindex="16" value="Submit">					
+				</form>
+			</aside>
+			<article>
+				<h1>Please enter the following information:</h1>
+				<form action="subscribe.html" method="get" name="email_form" id="email_form" onsubmit="submitEmail()">
+					<label for="name"> Name:</label>
+						<input type="text" name="name" id="name" tabindex="1" autofocus required><br>
+					<label type="email">Email:</label>
+						<input type="email" name="email" id="email" tabindex="3" required><br>
+					<label for="prefsys">Prefer:</label>
+						<select name="prefsys" tabindex="4">
+							<optgroup label="Nintendo">
+								<option value="n64">64</option>
+								<option value="3ds">3DS</option>
+								<option value="switch">Switch</option>
+							</optgroup>
+							<optgroup label="Other">
+								<option value="xbox">Xbox</option>
+								<option value="ps">Playstation</option>
+								<option value="pc">PC</option>
+							</optgroup>
+						</select><br>
+					<label for="favgame">Favorites:</label>
+						<select name="favgame" size="4" tabindex="5" multiple>
+							<option value="oot">Ocarina of Time</option>
+							<option value="sm64">Super Mario 64</option>
+							<option value="ssb">Super Smash Bros</option>
+							<option value="007">Goldeneye</option>
+						</select><br>
+					<label for="comments">Comments:</label> 
+						<textarea type="text" name="comments" tabindex="6" cols="50" rows="7" placeholder="Optional but appreciated"></textarea><br>
+						<input type="submit" name="submit" id="button" tabindex="7" value="Subscribe">
+						<input type="reset" name="reset" id="button" tabindex="8" value="Reset">
+				</form>
+			</article>
+			<aside id="nav_list">
+				<ul>
+					<li><a href="lozoot.html"><img src="../images/Zelda_OOT_Boxart.png" alt="OoT" height="60" />LoZ: OoT</a></li>
+					<li><a href="sm64.html"><img src="../images/Super_Mario_64_Box_art.jpg" alt="SM64" height="60" />Mario 64</a></li>
+					<li><a href="ssb.html"><img src="../images/super-smash-bros-front-cover.jpg" alt="SSB" height="60" />Smash 64</a></li>
+					<li><a href="g007.html"><img src="../images/goldeneye-007-front-cover.jpg" alt="OoT" height="60" />Goldeneye</a></li>
+				</ul>
+			</aside>
+		</main>
+		<footer>
+			<p>&copy; 2018 Nintendo. Games are property of their respective owners. &copy; 2018 Nathan Colpron</p>
+		</footer>
+	</body>
+</html>

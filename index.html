@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- 
+References for images: Majora’s Mask photo. Zeldapedia. Retrieved April 20th, 2018 from:  http://zelda.wikia.com/wiki/Majora
+Triforce Emblem. Pinterest. Retrieved April 20th, 2018 from: https://www.pinterest.com/pin/406801778813393447/
+Mario png. Wikia. Retrieved April 20th, 2018 from: http://www.wikia.com/File:Mario.png
+Ganondorf photo. Gamecrate. Retrieved April 20th, 2018 from: https://www.gamecrate.com/scariest-bosses-ganon-ocarina-time/14611
+Goldeneye character list. Uproxx. Retrieved April 20th, 2018 from: https://uproxx.com/gaming/goldeneye-n64-facts/
+Smash bros character models. DeviantArt. Retrieved April 20th, 2018 from: https://theamazingnsixtyfour.deviantart.com/
+-->
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Nintendo 64 Classics</title>
+		<link rel="icon" type="image/ico" href="images/Nintendo_64_Logo.png">
+		<link rel="stylesheet" href="styles/normalize.css">
+		<link rel="stylesheet" href="styles/main.css">
+		<link rel="stylesheet" href="styles/slicknav.css">
+		<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+		<script src="js/jquery.slicknav.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+			});
+		</script>
+	</head>
+	<body>
+		<header>
+			<img src="images/Nintendo_64_Logo.png" alt="n64" height="60" />
+			<h2>NINTENDO 64 Classics</h2>
+		</header>
+		<nav id="mobile_menu"></nav>
+		<nav id="nav_menu">
+			<ul>
+				<li><a href="index.html" class="current">Home</a></li>
+				<li><a href="pages/games.html">Classic Games</a>
+					<ul>
+						<li><a href="pages/lozoot.html">Ocarina of Time</a></li>
+						<li><a href="pages/sm64.html">Super Mario 64</a></li>
+						<li><a href="pages/ssb.html">Super Smash Bros</a></li>
+						<li><a href="pages/g007.html">Goldeneye</a></li>
+					</ul>
+				</li>
+				<li><a href="pages/images.html">Gallery</a></li>
+				<li><a href="#">Test Pages</a>
+					<ul>
+						<li><a href="#">Page 1</a></li>
+						<li><a href="#">Page 2</a></li>
+						<li><a href="#">Page 3 ></a>
+							<ul>
+								<li><a href="#">Sub-Page 1</a></li>
+								<li><a href="#">Sub-Page 2</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a href="pages/contactus.html">Contact Us</a></li>
+			</ul>
+		</nav>
+		<main>
+			<aside id="sidebar">
+				<img src="images/ButtonIcon-N64-C-Up.png" alt="c-up" />
+				<p>Check out the link above to send us some feedback!</p>
+				<img src="images/Mario.png" alt="Mario" height="200" />
+			</aside>
+			<article>
+					<h1>Welcome to our website!</h1>
+					<h3>Here you will find all you could possibly seek. These are the games that defined our generation. Enjoy responsibly.</h3>
+					<img src="images/Majora's_Mask.png" alt="LoZMM" height="200" />
+					<img src="images/triforce_design.png" alt="LoZTF" height="200" />
+			</article>
+			<aside id="nav_list">
+				<ul>
+					<li><a href="pages/lozoot.html"><img src="images/Zelda_OOT_Boxart.png" alt="OoT" height="60" />LoZ: OoT</a></li>
+					<li><a href="pages/sm64.html"><img src="images/Super_Mario_64_Box_art.jpg" alt="SM64" height="60" />Mario 64</a></li>
+					<li><a href="pages/ssb.html"><img src="images/super-smash-bros-front-cover.jpg" alt="SSB" height="60" />Smash 64</a></li>
+					<li><a href="pages/g007.html"><img src="images/goldeneye-007-front-cover.jpg" alt="OoT" height="60" />Goldeneye</a></li>
+				</ul>
+			</aside>
+		</main>
+		<footer>
+			<p>&copy; 2018 Nintendo. Games are property of their respective owners. &copy; 2018 Nathan Colpron</p>
+		</footer>
+	</body>
+</html>
